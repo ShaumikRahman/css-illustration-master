@@ -1,6 +1,17 @@
 .main {
   position: relative;
   z-index: 2;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.875rem;
+
+  @include breakpoint-down(medium) {
+    margin-top: 1rem;
+    gap: 40px;
+    flex-direction: column;
+  }
 
   &__phone {
     z-index: 3;
@@ -9,7 +20,6 @@
     width: 15.5rem;
     height: 31.5625rem;
     background-color: $Light-Grayish-Violet;
-    margin: 4rem auto;
     border-radius: 1.875rem;
     border: 0.625rem solid #fff;
     box-shadow: 0px 2rem 4.5rem 1px rgba(0, 0, 0, 0.25);
@@ -209,6 +219,29 @@
         }
       }
 
+    }
+  }
+
+  &__text {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include breakpoint-down(medium) {
+      width: 60%;
+      text-align: center;
+    }
+
+    &__title {
+      color: $Very-Dark-Desaturated-Violet;
+      font-weight: 700;
+      font-size: 250%;
+    }
+
+    &__body {
+      color: $Dark-Grayish-Violet;
+      line-height: 1.5rem;
     }
   }
 }

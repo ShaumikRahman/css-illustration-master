@@ -5,7 +5,7 @@
     position: absolute;
 
     @include breakpoint-up(medium) {
-      left: -12%;
+      left: -14.5%;
       top: -65%;
       width: 40%;
     }
@@ -27,7 +27,7 @@
     position: absolute;
 
     @include breakpoint-up(medium) {
-      right: -12%;
+      right: -13.5%;
       bottom: -65%;
       width: 40%;
     }
