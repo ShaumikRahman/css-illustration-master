@@ -1,5 +1,7 @@
 .background {
+
   &__shape1 {
+    z-index: 1;
     position: absolute;
 
     @include breakpoint-up(medium) {
@@ -12,8 +14,8 @@
 
     width: 100%;
     height: 150%;
-    background: linear-gradient(45deg, #8838ff, #e942ff);
-    border: 0.01px solid #8838ff;
+    background: linear-gradient(45deg, $Light-Violet, $Light-Magenta);
+    border: 0.01px solid $Light-Violet;
     border-radius: 500rem;
 
     transition-property: left, top, width;
@@ -21,6 +23,7 @@
   }
 
   &__shape2 {
+    z-index: 1;
     position: absolute;
 
     @include breakpoint-up(medium) {

@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
 
 body {
-    overflow: hidden
+    overflow: hidden;
+    font-family: 'Rubik';
 }
