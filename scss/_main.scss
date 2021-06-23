@@ -68,6 +68,7 @@
             &__heading {
               font-size: 0.6875rem;
               color: $White;
+              letter-spacing: 0.2px;
             }
         
             &__subheading {
@@ -91,8 +92,123 @@
               background-color: $White;
             }
           }
-
         }
+    }
+
+    &__chat {
+      position: relative;
+      font-size: 0.53125rem;
+      top: -1.125rem;
+      width: 95%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      word-wrap: break-word;
+
+      &__msgLeft {
+        color: $Moderate-Violet;
+        background-color: rgba(0, 0, 0, 0.05);
+        width: 53%;
+        padding: 0.5rem;
+        border-radius: 0.625rem 0.625rem 0.625rem 0.25rem;
+      }
+
+      .leftLast {
+        margin-top: 0.5rem;
+      }
+
+      &__msgRight {
+        color: $Desaturated-Dark-Violet;
+        background-color: $White;
+        box-shadow: 0px 6px 12px -8px rgba(0, 0, 0, 0.10);
+        width: 54%;
+        padding: 0.5rem;
+        border-radius: 0.625rem 0.625rem 0.25rem 0.625rem;
+        margin-left: auto;
+      }
+
+      .small {
+        width: 31%;
+        text-align: end;
+      }
+
+      &__imgs {
+        display: flex;
+        gap: .5rem;
+        margin-left: auto;
+        margin-top: 0.5rem;
+
+        &__img {
+          width: 2.5rem;
+          height: 2.5rem;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: .5rem;
+        }
+      }
+
+      &__offer {
+        color: $White;
+        background: linear-gradient(to right, $Light-Magenta, $Light-Violet);
+        width: 77.5%;
+        padding: .6875rem 0px;
+        border-radius: 0.625rem 0.625rem 0.625rem 0.25rem;
+      
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: center;
+
+        &__button {
+          margin: auto;
+          width: .75rem;
+          height: .75rem;
+          background-color: transparent;
+          border: 1px solid $White;
+          border-radius: 100%;
+        }
+
+        // &__text {
+
+        // }
+
+        &__price {
+          font-weight: 700;
+          font-size: .6875rem;
+          text-align: start;
+        }
+      }
+
+      &__message {
+        height: 2.0625rem;
+        width: 100%;
+        margin: auto;
+        background-color: $White;
+        border-radius: 1rem;
+
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-items: center;
+
+        &__text {
+          color: $Grayish-Blue;
+          margin-left: 1.25rem;
+        }
+
+        &__button {
+          height: 1.5rem;
+          width: 1.5rem;
+          margin: auto;
+          font-weight: 700;
+          font-size: 1.125rem;
+          color: $White;
+          background-color: $Very-Dark-Desaturated-Violet;
+          border: none;
+          border-radius: 100%;
+        }
+      }
+
     }
   }
 }
